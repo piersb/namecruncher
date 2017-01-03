@@ -1,0 +1,14 @@
+<h1>Listing writers</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+ 
+  <% @writers.each do |writer| %>
+    <tr>
+      <td><%= writer.name %></td>
+      <td><%= link_to 'Show', writers_path(writer) %></td>
+    </tr>
+  <% end %>
+</table>
